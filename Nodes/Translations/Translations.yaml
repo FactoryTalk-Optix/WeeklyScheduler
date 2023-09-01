@@ -1,0 +1,24 @@
+Name: Translations
+Id: g=d14656b8c903ed401155137b18cc995a
+Type: FolderType
+Children:
+- Name: LocalizationDictionary1
+  Id: g=ed2508d223db29bf577d06385f37701a
+  Type: LocalizationDictionary
+  DataType: String
+  ValueRank: OneOrMoreDimensions
+  ArrayDimensions: [0,0]
+  Value: 
+   {
+    "Type": 12,
+    "Dimensions": [7,2],
+    "Body": [
+     "","en-US",
+     "Apply","Apply",
+     "Red","Red",
+     "Green","Green",
+     "Alpha","Alpha",
+     "Blue","Blue",
+     "Background","Background"
+    ]
+   }

@@ -1,0 +1,26 @@
+Name: 'OPC-UA'
+Id: g=5bc763f87c6e51f6360be3ac4f1ddc23
+Type: FolderType
+Children:
+- Name: 'OPC-UA Server'
+  Id: g=a11631c180fa9c0402496748cfc22863
+  Type: OPCUAServer
+  Children:
+  - Name: EndpointURL
+    Id: g=9e001b1b3cf2cb96ab6e8c7251462ef9
+    Type: PropertyType
+    DataType: ResourceUri
+    Value: "opc.tcp://localhost:59100"
+  - Name: NodesToPublish
+    Id: g=f4664c890136245685250002f844c89b
+    Type: BaseObjectType
+  - Name: MinimumMessageSecurityMode
+    Id: g=f51618ecb9f66ed7b0f30bf62cf7083d
+    Type: PropertyType
+    DataType: MessageSecurityModeEnum
+    Value: 0
+  - Name: MinimumSecurityPolicy
+    Id: g=0701482893473040da0a3b1ba4f769df
+    Type: PropertyType
+    DataType: SecurityPolicyEnum
+    Value: 0

@@ -1,0 +1,162 @@
+Name: DataStores
+Id: g=c741ab1810b19e30753b2a3506cf1c23
+Type: FolderType
+Children:
+- Name: SchedulerDB
+  Id: g=2aab378fc6204b91287c2eca7e5b9ea7
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Id: g=b82db65feb7f6dbe8b174ff824998f12
+    Type: BaseObjectType
+    Children:
+    - Name: Scheduler
+      Id: g=323d4a7f06de051704834e307d1d6f6a
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Id: g=c5ba989f4421dd26673fdb5dacfb5b01
+        Type: BaseObjectType
+        Children:
+        - Name: Day0
+          Id: g=c67126a2a867c23a60263e71d02b17e7
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Day1
+          Id: g=b90fb93d21ec7c3b3a2d5ec4aa0400ee
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Day2
+          Id: g=5f65cbe8e87e1311b46a74e7a68fc8dc
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Day3
+          Id: g=2359651b88b863cdf380ec20b3559b5e
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Day4
+          Id: g=e77360ae3289c45c405ee7c6d84eba5e
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Day5
+          Id: g=c7a01770b0aee2edccc8dddf1500b5c7
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: Day6
+          Id: g=35bcc251d9eeccd7bb8f61601b3ad68f
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+  - Class: Reference
+    Target: ns=15;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Id: g=22b2cf0741676b8c1bb4ef001f5c4b16
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: MaxColumnCount
+    Id: g=1823f05ee829e10e9c99a77505c3dc10
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: DataTypeCompatibilityMap
+    Id: g=8c7575b2be8746a4e4ecb90cfe2b1c59
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+    Value: {"Type":17,"Dimensions":[0,0],"Body":[]}
+  - Name: Status
+    Id: g=5552713fe866dc1d0ddb31a63a1942ba
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=13;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=13;i=59
+    Direction: Forward
+  - Name: SchedulerLogic
+    Id: g=a955a84d56f6a843f6779e625f3b37aa
+    Type: NetLogic
+    Children:
+    - Name: SchedulerDB
+      Id: g=c6dc038616e02e2a67f8cde9335252d1
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"2aab378fc6204b91287c2eca7e5b9ea7","Namespace":18}
+      Children:
+      - Name: Kind
+        Id: g=ce431364d3c633e2a7e73f7cec1aa770
+        Type: PropertyType
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: Active
+      Id: g=4dd2a0b5b16ea078b3a4ba37d6c8ebec
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: ForceCheck
+      Id: g=8890f164b7e282170a67a5759dc06bd5
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+  - Name: CheckCalendar
+    Id: g=6db68d54eb273f8051d032a736f41704
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false

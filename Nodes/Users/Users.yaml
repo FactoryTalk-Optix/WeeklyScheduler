@@ -1,0 +1,42 @@
+Name: Users
+Id: g=f0b9ef2763551019f3ddecfd99a4ef25
+Type: FolderType
+Children:
+- Name: Guest
+  Id: g=2583d305e1ae7188d966f52d1aabb713
+  Type: UserType
+  Children:
+  - Name: LocaleId
+    Id: g=a9ac4cee2ae8ac580141e09facc33494
+    Type: BaseVariableType
+    DataType: LocaleId
+    ReferenceType: HasProperty
+    Value: "en-US"
+  - Name: Password
+    Id: g=2eb888d5f92cc15b6c4b6ba366473601
+    Type: Password
+    DataType: Password
+    ReferenceType: HasProperty
+    AccessLevel: Read
+    Value: ""
+    Children:
+    - Name: Hash
+      Id: g=5067db4f72b62a8e0e197763a74d0b44
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      Value: {"TypeId":{"Id":252,"Namespace":1},"Body":{"Hash":[4,125,221,125,250,250,27,100,186,138,134,247,54,0,101,234,152,108,81,252,156,140,174,233,186,185,107,242,219,216,1,245],"Salt":[117,177,103,99,55,78,192,156,156,125,163,129,9,143,39,111,212,91,102,164,228,15,106,11,63,130,212,41,18,12,217,66]}}
+    - Name: ChangeTimestamp
+      Id: g=7679f773a50bf4baa20b824dbd7dc823
+      Type: PropertyType
+      DataType: UtcTime
+      AccessLevel: Read
+      Value: "2023-02-21T13:42:22.5823039"
+    - Name: History
+      Id: g=3851dd2fe956ec8376468bc4623516f2
+      Type: PropertyType
+      DataType: PasswordHash
+      AccessLevel: Read
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: []
