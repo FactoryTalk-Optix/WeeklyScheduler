@@ -1,3 +1,3 @@
 # Weekly Scheduler
 
-Trigger an event based on time schedule
+Trigger an event based on a weekly time schedule
